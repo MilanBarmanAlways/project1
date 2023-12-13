@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milan - u1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jarallax CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body class="bg-main_bg_color font-Saira">
+    <!--================================================
+                        NAVBAR
+====================================================-->
+    <nav class="fixed_nav" id="navbar">
+      <div class="main_container nav_between">
+        <div id="logo"><img src="./assets/logo.png" alt="" /></div>
+        <div class="cursor-pointer" id="menu_icon">
+          <span
+            ><i class="ri-menu-line text-[30px] text-white" id="menuClose"></i
+          ></span>
+        </div>
+      </div>
+      <div class="hidden duration-200" id="menu">
+        <div
+          class="fixed top-0 left-0 right-0 w-full h-screen bg-main_bg_color -z-[100] flex justify-center items-center"
+        >
+          <div>
+            <ul
+              class="text-center text-[20px] space-y-3 text-white font-[500] capitalize"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >about me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#whatido"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >what i do</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >portfolio</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#resume"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >my experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-btn_color duration-500 nav-link"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--================================================
+                        HEADER
+====================================================-->
+    <header class="hero_area jarallax" id="home">
+      <div class="gradient-bottom"></div>
+      <div class="main_container">
+        <div>
+          <p class="i_am_kyros_text">I Am Kyros Noriaki</p>
+          <h1 class="typed_text"><span id="typed"></span></h1>
+          <div class="flex flex-wrap items-center md:gap-5">
+            <div class="relative p-3 France">
+              <div class="gray_line"></div>
+              <h5 class="coumtry_name">France</h5>
+              <p class="gray_text">Bodin, Chauveau</p>
+            </div>
+            <div class="relative p-3 USA">
+              <div class="gray_line"></div>
+              <h5 class="coumtry_name">USA</h5>
+              <p class="gray_text">Louisiana, Bayerfurt</p>
+            </div>
+            <div class="relative p-3 German">
+              <div class="gray_line"></div>
+              <h5 class="coumtry_name">German</h5>
+              <p class="gray_text">Hamburg, Dortmund</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--================================================
+                        MAIN SECTION
+      ====================================================-->
+    <main>
+      <!--================================================
+                    ABOUT ME SECTION
+      ====================================================-->
+      <section class="py-20 relative" id="about">
+        <div class="gradient-bottom"></div>
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">About Me</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+            </div>
+          </div>
+          <div class="my-16">
+            <p class="max-w-4xl mx-auto gray_text text-center">
+              I am a website designer from Lousiana, with a strong focus in
+              UI/UX design. I love to get new experiences and always learn from
+              my surroundings. I've done more than 285 projects. You can check
+              it through portfolio section on this website. I looking forward to
+              any opportunities and challenges.
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+            <div>
+              <div class="card mx-auto">
+                <div class="percent">
+                  <svg>
+                    <circle cx="105" cy="105" r="100"></circle>
+                    <circle
+                      cx="105"
+                      cy="105"
+                      r="100"
+                      style="--percent: 90"
+                    ></circle>
+                  </svg>
+                  <div class="number">
+                    <h3>90<span>%</span></h3>
+                  </div>
+                </div>
+                <div class="title">
+                  <h2 class="uppercase text-[20px] text-white">HTML</h2>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card mx-auto">
+                <div class="percent">
+                  <svg>
+                    <circle cx="105" cy="105" r="100"></circle>
+                    <circle
+                      cx="105"
+                      cy="105"
+                      r="100"
+                      style="--percent: 70"
+                    ></circle>
+                  </svg>
+                  <div class="number">
+                    <h3>70<span>%</span></h3>
+                  </div>
+                </div>
+                <div class="title">
+                  <h2 class="uppercase text-[20px] text-white">css</h2>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card mx-auto">
+                <div class="percent">
+                  <svg>
+                    <circle cx="105" cy="105" r="100"></circle>
+                    <circle
+                      cx="105"
+                      cy="105"
+                      r="100"
+                      style="--percent: 75"
+                    ></circle>
+                  </svg>
+                  <div class="number">
+                    <h3>75<span>%</span></h3>
+                  </div>
+                </div>
+                <div class="title">
+                  <h2 class="uppercase text-[20px] text-white">javascript</h2>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card mx-auto">
+                <div class="percent">
+                  <svg>
+                    <circle cx="105" cy="105" r="100"></circle>
+                    <circle
+                      cx="105"
+                      cy="105"
+                      r="100"
+                      style="--percent: 50"
+                    ></circle>
+                  </svg>
+                  <div class="number">
+                    <h3>50<span>%</span></h3>
+                  </div>
+                </div>
+                <div class="title">
+                  <h2 class="uppercase text-[20px] text-white">react</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about_area jarallax">
+        <div class="gradient-top"></div>
+        <div class="gradient-bottom"></div>
+        <div class="main_container">
+          <div class="md:max-w-4xl mx-auto">
+            <p>
+              <span
+                ><i
+                  class="ri-double-quotes-r md:text-[100px] text-[50px] leading-none text-btn_color"
+                ></i
+              ></span>
+            </p>
+            <p class="about_jaralax_para_text">
+              Do more than is required. What is the distance between someone who
+              achieves their goals consistently and those who spend their lives
+              and careers merely following? The extra mile.
+            </p>
+            <p class="text-[20px] text-btn_color">Milan</p>
+          </div>
+        </div>
+      </section>
+      <!--================================================
+                    WHAT I DO SECTION
+      ====================================================-->
+      <section class="pt-20" id="whatido">
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">What I Do</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+            </div>
+          </div>
+          <div class="md:mt-16 mt-8">
+            <div class="grid lg:grid-cols-3 gap-5">
+              <div class="relative p-5" id="whatidoo">
+                <div class="gray_line"></div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <i class="ri-reactjs-fill text-[50px] text-btn_color"></i>
+                  </div>
+                  <div>
+                    <h4 class="brand_heading">Branding</h4>
+                  </div>
+                </div>
+                <p class="brand_para gray_text">
+                  Ex velit cupidatat magna voluptate deserunt quis et dolor
+                  adipisicing elit culpa ad exercitation proident irure deserunt
+                  irure.
+                </p>
+              </div>
+              <div class="relative p-5" id="whatidoo">
+                <div class="gray_line"></div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <i
+                      class="ri-code-s-slash-line text-[50px] text-btn_color"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="brand_heading">Development</h4>
+                  </div>
+                </div>
+                <p class="brand_para gray_text">
+                  Ex velit cupidatat magna voluptate deserunt quis et dolor
+                  adipisicing elit culpa ad exercitation proident irure deserunt
+                  irure.
+                </p>
+              </div>
+              <div class="relative p-5" id="whatidoo">
+                <div class="gray_line"></div>
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <i
+                      class="ri-camera-off-line text-[50px] text-btn_color"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="brand_heading">Photography</h4>
+                  </div>
+                </div>
+                <p class="brand_para gray_text">
+                  Ex velit cupidatat magna voluptate deserunt quis et dolor
+                  adipisicing elit culpa ad exercitation proident irure deserunt
+                  irure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================================
+                    PORTFOLIO SECTION
+      ====================================================-->
+      <section class="pt-20" id="portfolio">
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">portfolio</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+            </div>
+          </div>
+          <div class="md:mt-16 mt-8">
+            <div class="clumn3">
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio1.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio2.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio3.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio4.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio5.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="group overflow-hidden relative cursor-pointer mb-[20px] portfolioo"
+              >
+                <div class="portfolio_center_text">
+                  <h5 class="single_text">single image</h5>
+                </div>
+                <img
+                  class="portfolio_img"
+                  src="./assets/portfolio6.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================================
+                    MY RESUME SECTION
+      ====================================================-->
+      <section class="py-20" id="resume">
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">My Resume</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+            </div>
+          </div>
+          <div class="md:mt-16 mt-8">
+            <div class="grid lg:grid-cols-2 gap-8">
+              <div class="resume1">
+                <h3 class="experience_and_education_text">Experiences</h3>
+                <div class="mt-8 relative" id="resumee1">
+                  <div
+                    class="w-[1px] h-full left-[10px] bg-gray-500 absolute top-0"
+                  ></div>
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>1</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative" id="resumee1">
+                  <div
+                    class="w-[1px] h-full left-[10px] bg-gray-500 absolute top-0"
+                  ></div>
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>2</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative" id="resumee1">
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>3</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="experience_and_education_text">Education</h3>
+                <div class="mt-8 relative" id="resumee2">
+                  <div
+                    class="w-[1px] h-full left-[10px] bg-gray-500 absolute top-0"
+                  ></div>
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>1</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative" id="resumee2">
+                  <div
+                    class="w-[1px] h-full left-[10px] bg-gray-500 absolute top-0"
+                  ></div>
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>2</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative" id="resumee2">
+                  <div>
+                    <div
+                      class="bg-gradient-to-r from-[#2e2e2f] to-[#2d2f3200] py-2 rounded-md relative"
+                    >
+                      <div class="red_rounded_circle">
+                        <p>3</p>
+                      </div>
+                      <p class="gray_text ms-16">2014-now</p>
+                    </div>
+                    <div class="p-8">
+                      <h4
+                        class="md:text-[20px] text-[17px] text-white font-[600]"
+                      >
+                        Founder & Creative Director
+                      </h4>
+                      <p class="i_am_kyros_text">Kyros Studio</p>
+                      <p class="gray_text mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi tempora perferendis vero officia enim impedit
+                        voluptatem dignissimos, veniam ratione est alias rerum
+                        aperiam, nam aliquam reprehenderit iste dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-myresumejaralax py-20 jarallax md:h-[40vh] flex items-center"
+      >
+        <div class="gradient-top"></div>
+        <div class="gradient-bottom"></div>
+        <div class="main_container">
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="text-center" id="count1">
+              <h4 class="text-[30px] font-[700] text-white">8240</h4>
+              <p class="gray_text">HOURS OF WORKS</p>
+            </div>
+            <div class="text-center" id="count2">
+              <h4 class="text-[30px] font-[700] text-white">315</h4>
+              <p class="gray_text">PROJECTS DONE</p>
+            </div>
+            <div class="text-center" id="count3">
+              <h4 class="text-[30px] font-[700] text-white">250</h4>
+              <p class="gray_text">SATISFIED CUSTOMERS</p>
+            </div>
+            <div class="text-center" id="count4">
+              <h4 class="text-[30px] font-[700] text-white">32</h4>
+              <p class="gray_text">AWARDS WINNING</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================================
+                    BLOG  SECTION
+      ====================================================-->
+      <section class="py-20" id="blog">
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">Recent Blog</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+            </div>
+          </div>
+          <div class="md:mt-16 mt-8">
+            <div class="owl-carousel owl-theme">
+              <div class="item group cursor-pointer" id="blog1">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog1.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+              <div class="item group cursor-pointer" id="blog2">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog2.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+              <div class="item group cursor-pointer" id="blog3">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog3.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+              <div class="item group cursor-pointer" id="blog4">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog4.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+              <div class="item group cursor-pointer" id="blog5">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog5.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+              <div class="item group cursor-pointer" id="blog6">
+                <div class="overflow-hidden">
+                  <img class="blog_img" src="./assets/blog6.jpeg" alt="" />
+                </div>
+                <h4 class="blog_heading">how to make better user interface</h4>
+                <p class="gray_text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore eveniet, tenetur libero officiis molestiae dolor,
+                  explicabo veniam asperiores suscipit aut recusandae provident
+                  laboriosam in dignissimos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================================
+                    CONTACT  SECTION
+      ====================================================-->
+      <section
+        class="py-20 jarallax md:h-screen bg-contactjaralax"
+        id="contact"
+      >
+        <div class="gradient-top"></div>
+        <div class="gradient-bottom"></div>
+        <div class="main_container">
+          <div>
+            <h4 class="heading_text">Contact Me</h4>
+            <div class="flex gap-2 items-center justify-center">
+              <div class="dashed_white"></div>
+              <div class="dashed_red"></div>
+              <div class="dashed_white"></div>
+            </div>
+          </div>
+          <div class="md:mt-16 mt-8">
+            <form class="max-w-4xl mx-auto space-y-8" id="from">
+              <div class="md:grid-cols-3 grid gap-5">
+                <div id="input1">
+                  <input
+                    class="input_design"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div id="input2">
+                  <input
+                    class="input_design"
+                    type="text"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div id="input3">
+                  <input
+                    class="input_design"
+                    type="text"
+                    placeholder="Your Phone"
+                  />
+                </div>
+              </div>
+              <div id="input4">
+                <textarea
+                  class="input_design"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <div class="flex justify-center" id="btn">
+                <button class="bg-btn_color px-8 py-2 text-white">
+                  Send Message
+                </button>
+              </div>
+              <div class="flex justify-between md:flex-row flex-col gap-8">
+                <div class="text-center" id="email">
+                  <h4 class="text-[18px] text-white font-[600]">Email Me</h4>
+                  <p class="gray_text">contact@kyrosnoriaki.com</p>
+                </div>
+                <div class="text-center" id="phone">
+                  <h4 class="text-[18px] text-white font-[600]">Call Me</h4>
+                  <p class="gray_text">+1 700 333 92 96</p>
+                </div>
+                <div class="text-center" id="address">
+                  <h4 class="text-[18px] text-white font-[600]">Address</h4>
+                  <p class="gray_text">
+                    Collins Street West, Louisiana, <br />
+                    Bayerfurt, USA
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--================================================
+                    FOOTER  SECTION
+    ====================================================-->
+    <footer class="overflow-x-hidden">
+      <div class="main_container">
+        <div class="footer_between py-8">
+          <div id="footer_text">
+            <p class="gray_text">© Copyright 2023 - Kyros by Designesia</p>
+          </div>
+          <div class="flex gap-5" id="footer_icon">
+            <div class="rounded_circle group">
+              <a href=""
+                ><i
+                  class="ri-facebook-fill text-white group-hover:text-black duration-500 text-[20px]"
+                ></i
+              ></a>
+            </div>
+            <div class="rounded_circle group">
+              <a href=""
+                ><i
+                  class="ri-twitter-fill text-white group-hover:text-black duration-500 text-[20px]"
+                ></i
+              ></a>
+            </div>
+            <div class="rounded_circle group">
+              <a href=""
+                ><i
+                  class="ri-linkedin-fill text-white group-hover:text-black duration-500 text-[20px]"
+                ></i
+              ></a>
+            </div>
+            <div class="rounded_circle group">
+              <a href=""
+                ><i
+                  class="ri-pinterest-fill text-white group-hover:text-black duration-500 text-[20px]"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- OWL CAROUSEL CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Jarallax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <!-- Jarallax JS: Optional video extension -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      // ==============   TYPED JS   ===================
+      var typed = new Typed("#typed", {
+        strings: ["PROGRAMMER", "PHOTOGRAPHER", "FREELANCER"],
+        typeSpeed: 70,
+        backSpeed: 90,
+        loop: true,
+      });
+
+      // ============= OWL CAROUSEL ===================
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+            loop: false,
+          },
+        },
+      });
+
+      // ==============   JARALAX  JS   ===================
+      jarallax(document.querySelectorAll(".jarallax"), {
+        speed: 0.3,
+      });
+
+      // ON SCROLL NAVBAR COLOR CHANGE
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.backgroundColor = "#15171a";
+        } else {
+          document.getElementById("navbar").style.backgroundColor = "";
+        }
+      }
+
+      // WHEN YOU CLICK ON MENU ICON THEN MENU WILL OPEN OR HIDDEN
+      let menuIcon = document.querySelector("#menu_icon");
+      menuIcon.addEventListener("click", function () {
+        if (
+          document
+            .querySelector("#menuClose")
+            .classList.contains("ri-menu-line")
+        ) {
+          document.querySelector("#menuClose").classList.remove("ri-menu-line");
+          document.querySelector("#menuClose").classList.add("ri-close-line");
+        } else {
+          document
+            .querySelector("#menuClose")
+            .classList.remove("ri-close-line");
+          document.querySelector("#menuClose").classList.add("ri-menu-line");
+        }
+        document.querySelector("#menu").classList.toggle("hidden");
+      });
+
+      // WHEN YOU CLICK IN NAVMENU THEN WILL HIDDEN MENU
+      const navLink = document.querySelectorAll(".nav-link");
+      navLink.forEach((link) =>
+        link.addEventListener("click", () => {
+          document.querySelector("#menu").classList.add("hidden");
+          document.querySelector("#menuClose").classList.add("ri-menu-line");
+        })
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================================
+            MAIN_CONTAINER
+ ==================================== */
+.main_container {
+  @apply container mx-auto px-4;
+}
+
+/* =========================================
+              FIXED NAVBAR
+============================================*/
+.fixed_nav {
+  @apply fixed top-0 left-0 right-0 w-full z-[1000] md:py-5 py-2 duration-500;
+}
+
+.nav_between {
+  @apply flex justify-between items-center;
+}
+
+.logo {
+  @apply md:w-[140px] w-[100px];
+}
+
+.menu_icon {
+  @apply text-white text-[25px];
+}
+
+/* ========================================
+            HEADER AREA
+===========================================*/
+.hero_area {
+  @apply h-screen  bg-center relative w-full bg-heroimg bg-cover bg-no-repeat flex items-center;
+}
+
+.i_am_kyros_text {
+  @apply text-[#cf1f1f] font-[400] md:text-[18px] text-[15px];
+}
+.typed_text {
+  @apply md:text-[60px] text-[30px] text-white font-[700] my-5;
+}
+
+.coumtry_name {
+  @apply text-[18px] text-white font-[600];
+}
+
+.about_area {
+  @apply h-screen  bg-center relative w-full bg-aboutjaralax bg-cover bg-no-repeat flex items-center;
+}
+.about_jaralax_para_text {
+  @apply text-[28px] text-white font-[500] my-5;
+}
+
+/* ========================================
+            WHAT I DO
+===========================================*/
+.brand_heading {
+  @apply text-[25px] text-white font-[700];
+}
+.brand_para {
+  @apply text-[15px] leading-7;
+}
+
+.gray_line {
+  @apply absolute top-0 left-0 w-[1px] h-full bg-white/30;
+}
+/* ========================================
+            PORTFOLIO IMAGE
+===========================================*/
+.clumn3 {
+  @apply md:columns-3;
+}
+
+.portfolio_center_text{
+  @apply absolute top-0 left-0 right-0 w-full h-full z-[1] flex justify-center items-center
+}
+
+.single_text{
+  @apply text-[25px] text-white capitalize font-[600] group-hover:opacity-100 opacity-0 duration-500
+}
+
+
+.portfolio_img{
+  @apply grayscale group-hover:grayscale-0 duration-500 scale-125 group-hover:scale-100
+}
+
+/* ========================================
+            MY RESUME
+===========================================*/
+.heading_text {
+  @apply md:text-[40px] text-[25px] text-white font-[600] capitalize text-center;
+}
+
+.experience_and_education_text{
+  @apply text-[30px] text-white font-[600]
+}
+
+.red_rounded_circle {
+  @apply absolute w-[40px] h-[40px] bg-btn_color rounded-full top-0 -left-[10px] flex justify-center items-center text-white;
+}
+
+/* ========================================
+           RECENT BLOG
+===========================================*/
+.blog_img{
+  @apply grayscale group-hover:grayscale-0 group-hover:scale-125 duration-500 
+}
+
+.blog_heading {
+  @apply md:text-[20px] text-white capitalize font-[600] mt-5 mb-2;
+}
+.img_grayscale {
+  @apply grayscale group-hover:scale-110 duration-500 group-hover:grayscale-0 rounded;
+}
+
+
+/* ===========================  INPUT DESIGN  */
+.input_design {
+  @apply w-full border-[0.5px] border-white/60 bg-transparent p-2 capitalize placeholder:text-text_color text-white outline-none focus:bg-red-600/10 duration-500;
+}
+
+/* ===========================  BORDER WHITE DASHED LINE */
+.dashed_white {
+  @apply md:w-[40px] w-[20px] h-[1px] bg-text_color;
+}
+
+/* ===========================  BORDER RED DASHED LINE */
+.dashed_red {
+  @apply md:w-[40px] w-[20px] h-[1px] bg-btn_color;
+}
+
+/* ===========================  SOCIAL MEDIA ROUNDED CIRCLE */
+
+
+/* ============================ GRAY TEXT */
+.gray_text {
+  @apply text-white/50 text-[15px];
+}
+
+/* =========================== FOOTER BETWEEN SECTION */
+.footer_between {
+  @apply flex justify-between items-center md:flex-row flex-col gap-5;
+}
+.rounded_circle{
+  @apply w-[40px] h-[40px] hover:bg-white duration-500 cursor-pointer flex justify-center items-center rounded-full 
+}
+
+.social_media_link_font_property {
+  @apply text-[20px] text-white/80 duration-500;
+}
+
+.social_media_link_design {
+  @apply w-[40px] h-[40px] rounded-full  flex justify-center items-center duration-500 cursor-pointer;
+}
+
+
+/* =========================== GRADIENT BOTTOM */
+.gradient-bottom {
+  z-index: -1;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    0deg,
+    rgb(21, 23, 26) 0%,
+    rgba(23, 26, 29, 0) 100%
+  );
+}
+
+/* =========================== GRADIENT TOP */
+.gradient-top {
+  z-index: -1;
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  height: 30%;
+  transform: rotate(180deg);
+  background: linear-gradient(
+    0deg,
+    rgb(21, 23, 26) 0%,
+    rgba(23, 26, 29, 0) 100%
+  );
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.card .percent {
+  position: relative;
+}
+
+.card svg {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+
+.card svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #2f3134;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+  stroke: #3498db;
+}
+
+.card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+  font-weight: 200;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card .number h3 span {
+  font-size: 1rem;
+}
+
+.card .title h2 {
+  margin: 25px 0 0;
+}
+
+.card:nth-child(1) svg circle:last-of-type {
+  stroke: #cf1f1f;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+  stroke: #2ecc71;
+}
+
